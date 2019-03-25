@@ -1,0 +1,29 @@
+<h1>{{ data }}</h1>
+
+<div class="row">
+    <div class="com-xs-12">
+        <form action="" class="form-group">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Add Task" ng-model="task.title">
+                
+                <span class="input-group-addon addon-btn" ng-click="addTask(task)"> <i class="ion-plus-circled"></i> Add</span>
+            </div>
+        </form>
+    </div>
+    <div class="col-xs-12 clear">
+        
+        <ul class="task-container clear">
+            <li ng-repeat="task in tasks | orderBy:'time':true">
+                <span>{{ $index+1 }}. </span>
+                <span ng-class="{strike: task.status === 'completed'}"> <i ng-if="task.status == 'completed'"  class="ion-checkmark-circled"></i> {{ task.title }}</span>  
+                <span class="pull-right task-action">
+                    <span ng-if="task.status != 'completed'" ng-click="completeTask(task)"><i  class="ion-checkmark-circled btn btn-success btn-sm"></i></span> 
+                    <span ng-click="deleteTask(task)"><i class="ion-close-circled btn btn-danger btn-sm"></i></span>
+                </span>
+            </li>
+            <li ng-if="!tasks[0]" class="task-container text-center">
+                <h3 >No record Found !</h3>
+            </li>
+        </ul>
+    </div>
+</div>

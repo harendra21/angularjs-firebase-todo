@@ -1,0 +1,26 @@
+{
+  "name": "angularjs-moduler-app-starter",
+  "version": "1.0.0",
+  "description": "angulrjs moduler app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Harendra Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
+    "angular": "^1.6.9",
+    "angular-animate": "^1.6.9",
+    "angular-route": "^1.6.9",
+    "angular-touch": "^1.6.9",
+    "angular-ui-bootstrap": "^2.5.6",
+    "angularfire": "^2.3.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "oclazyload": "^1.1.0"
+  }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    border-radius: 0!important;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.addon-btn{
+    cursor: pointer
+}
+.task-container{
+    list-style: none;
+    
+}
+.task-container > li{
+    padding: 15px 10px 15px 10px;
+    font-size: 16px;
+    background-color: #3a3a3a;
+    margin-bottom: 2px;
+}
+.task-action{
+    font-size: 14px;
+    font-weight: 600;
+}
+.strike{
+    color:#64ff64;
+    /* text-decoration:line-through */
+}
+.task-action > span{
+    cursor: pointer;
+}
+.clear{
+    margin: 0;
+    padding: 0;
+}
